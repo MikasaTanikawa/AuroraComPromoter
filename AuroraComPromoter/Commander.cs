@@ -84,7 +84,7 @@ namespace AuroraComPromoter
                 sqliteCommand.CommandText =
                     "UPDATE FCT_Commander " +
                     "SET RankID = @RankID, GameTimePromoted = @GameTimePromoted, " +
-                    "Seniority = (SELECT MAX(Seniority) FROM FCT_Commander " +
+                    "Seniority = (SELECT IFNULL(MAX(Seniority), 0) FROM FCT_Commander " +
                         "WHERE GameID = @GameID AND RaceID = @RaceID " +
                         "AND CommanderType = @CommanderType AND RankID = @RankID) + 1 " +
                     "WHERE CommanderID = @CommanderID";
