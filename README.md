@@ -10,7 +10,7 @@ Save and exit from Aurora, copy AuroraComPromoter.exe to game directory and star
 
 ### Prerequisites
 
-Same as for Aurora 4X v2.5.1: .NET Framework 4.0 and System.Data.SQLite 1.0.103.
+Same as for Aurora 4X v2.7.0: .NET Framework 4.0 and System.Data.SQLite 1.0.103.
 
 ### Database modifications
 
